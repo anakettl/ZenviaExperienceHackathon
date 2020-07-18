@@ -6,4 +6,4 @@ spring:
     schema: DATABASE_SCHEMA
   flyway:
     baseline-description: << Schema Tst Flyway >>
-    schemas: assembly
+    schemas: backend
