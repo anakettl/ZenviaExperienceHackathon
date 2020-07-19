@@ -15,5 +15,5 @@ public class ProductDto {
 
     public Product convertToProduct() {
         return new Product(null, this.name, this.code, this.description, this.price, department, LocalDateTime.now());
-
+    }
 }

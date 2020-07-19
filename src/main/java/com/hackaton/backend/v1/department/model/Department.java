@@ -46,4 +46,14 @@ public class Department implements Serializable {
     public Long getId() {
         return id;
    }
+
+    @Override
+    public String toString() {
+        return "Department{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", products=" + products +
+                ", createdAt=" + createdAt +
+                '}';
+    }
 }

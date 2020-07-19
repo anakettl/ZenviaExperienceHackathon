@@ -1,12 +1,24 @@
 package com.hackaton.backend.v1.product.model;
 
-import com.hackaton.backend.v1.company.model.Company;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.hackaton.backend.v1.department.model.Department;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.persistence.*;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
+@Table
+@Getter
+@Setter
+@Entity
+@NoArgsConstructor
+@AllArgsConstructor
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+@SequenceGenerator(name = "SEQ_PRODUCT", sequenceName = "SEQUENCE_PRODUCT", allocationSize = 1)
 public class Product implements Serializable {
 
     public Product(Long id) { this.id = id; }
@@ -22,10 +34,10 @@ public class Product implements Serializable {
     @Column(name = "CODE", nullable = false, length = 10)
     private String code;
 
-    @Column(description = "description", nullable = false, length = 400)
+    @Column(name = "DESCRIPTION", nullable = false, length = 400)
     private String description;
 
-    @Column(price = "PRICE", nullable = false, precision = 10, scale = 2)
+    @Column(name = "PRICE", nullable = false, precision = 10, scale = 2)
     private Double price;
 
     @ManyToOne(fetch = FetchType.EAGER, optional = false)
@@ -39,4 +51,15 @@ public class Product implements Serializable {
         return id;
     }
 
+    @Override
+    public String toString() {
+        return "Product{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", code='" + code + '\'' +
+                ", description='" + description + '\'' +
+                ", price=" + price +
+                ", createdAt=" + createdAt +
+                '}';
+    }
 }
