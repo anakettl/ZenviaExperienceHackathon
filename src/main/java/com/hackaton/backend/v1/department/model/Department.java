@@ -36,9 +36,9 @@ public class Department implements Serializable {
     private Company company;
 
     @Column(name = "CREATED_AT", nullable = false)
-    protected LocalDateTime createdAt;
+    private LocalDateTime createdAt;
 
     public Long getId() {
         return id;
-    }
+   }
 }

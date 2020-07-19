@@ -26,6 +26,6 @@ public class CompanyDto implements Serializable {
     }
 
     public Company convertToCompany() {
-        return new Company(null, this.name, this.cnpj, LocalDateTime.now(), departments);
+        return new Company(null, this.name, this.cnpj, departments, LocalDateTime.now());
     }
 }

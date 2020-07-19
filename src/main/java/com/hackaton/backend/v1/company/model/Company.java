@@ -37,13 +37,9 @@ public class Company implements Serializable {
     @Column(name = "CNPJ", nullable = false, length = 11, unique = true)
     private String cnpj;
 
-    @Column(name = "CREATED_AT", nullable = false)
-    protected LocalDateTime createdAt;
-
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "company", fetch = FetchType.EAGER)
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, mappedBy = "company")
     private Set<Department> departments;
 
-    public Long getId() {
-        return id;
-    }
+    @Column(name = "CREATED_AT", nullable = false)
+    protected LocalDateTime createdAt;
 }
