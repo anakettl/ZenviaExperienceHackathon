@@ -37,7 +37,7 @@ public class Product implements Serializable {
     @Column(name = "DESCRIPTION", nullable = false, length = 400)
     private String description;
 
-    @Column(name = "PRICE", nullable = false, precision = 10, scale = 2)
+    @Column(name = "PRICE", nullable = false, columnDefinition = "NUMERIC(19,0)")
     private Double price;
 
     @ManyToOne(fetch = FetchType.EAGER, optional = false)
