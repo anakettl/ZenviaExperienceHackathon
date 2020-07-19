@@ -13,7 +13,6 @@ public class PromotionDto {
     private String description;
     private Integer discount;
     private Company company;
-    private LocalDateTime createdAt;
 
     public Promotion convertToPromotion() {
         return new PromotionDto(null, this.name, this.beginDate, this.endDate, this.description, this.discount, company, LocalDateTime.now());
