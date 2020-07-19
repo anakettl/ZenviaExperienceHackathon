@@ -12,7 +12,8 @@ import java.util.List;
 import static com.hackaton.backend.v1.core.validation.GenericMessagesValidationEnum.ENTITY_NOT_FOUND;
 import static com.hackaton.backend.v1.core.validation.MessageValidationProperties.getMessage;
 
-public class ProductService {
+@Service
+public class ProductService implements IProductService {
 
     private final ProductRepository productRepository;
 
