@@ -1,14 +1,26 @@
 package com.hackaton.backend.v1.promotion.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.hackaton.backend.v1.company.model.Company;
-import com.hackaton.backend.v1.product.model.Product;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.time.LocalDateTime;
-import java.util.Set;
 
-public class Promotion {
+@Table
+@Getter
+@Setter
+@Entity
+@NoArgsConstructor
+@AllArgsConstructor
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+@SequenceGenerator(name = "SEQ_PROMOTION", sequenceName = "SEQUENCE_PROMOTION", allocationSize = 1)
+public class Promotion implements Serializable {
     public Promotion(Long id) { this.id = id; }
 
     @Id
