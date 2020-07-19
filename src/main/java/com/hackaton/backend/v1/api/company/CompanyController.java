@@ -15,14 +15,11 @@ import java.io.Serializable;
 import java.util.List;
 
 @RestController
+@AllArgsConstructor
 @RequestMapping("/api/v1/companies")
 public class CompanyController implements Serializable {
 
     private final ICompanyService companyService;
-
-    public CompanyController(ICompanyService companyService) {
-        this.companyService = companyService;
-    }
 
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<Company>> getAll(@RequestParam(required = false, defaultValue = "ASC") String sort) {
