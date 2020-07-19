@@ -15,7 +15,6 @@ import java.io.Serializable;
 import java.util.List;
 
 @RestController
-@AllArgsConstructor
 @RequestMapping("/api/v1/companies")
 public class CompanyController implements Serializable {
 

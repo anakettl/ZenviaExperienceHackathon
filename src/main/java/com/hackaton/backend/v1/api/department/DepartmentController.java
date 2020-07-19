@@ -4,7 +4,6 @@ import com.hackaton.backend.v1.core.model.ResourceCreated;
 import com.hackaton.backend.v1.department.dto.DepartmentDto;
 import com.hackaton.backend.v1.department.model.Department;
 import com.hackaton.backend.v1.department.service.interfaces.IDepartmentService;
-import lombok.AllArgsConstructor;
 import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -15,7 +14,6 @@ import java.io.Serializable;
 import java.util.List;
 
 @RestController
-@AllArgsConstructor
 @RequestMapping("/api/v1/departments")
 public class DepartmentController implements Serializable {
 
