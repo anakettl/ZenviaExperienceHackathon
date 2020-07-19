@@ -2,6 +2,7 @@ package com.hackaton.backend.v1.company.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.hackaton.backend.v1.department.model.Department;
+import com.hackaton.backend.v1.serviceOffered.model.ServiceOffered;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -39,6 +40,9 @@ public class Company implements Serializable {
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, mappedBy = "company")
     private Set<Department> departments;
+
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, mappedBy = "company")
+    private Set<ServiceOffered> servicesOffered;
 
     @Column(name = "CREATED_AT", nullable = false)
     protected LocalDateTime createdAt;
