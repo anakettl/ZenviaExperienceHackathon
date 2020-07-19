@@ -40,8 +40,8 @@ public class Promotion implements Serializable {
     @Column(name = "DESCRIPTION", nullable = false, length = 400)
     private String description;
 
-    @Column(name = "DISCOUNT", nullable = false, columnDefinition = "INTEGER")
-    private Integer discount;
+    @Column(name = "DISCOUNT", nullable = false, columnDefinition = "NUMBER(10,2)")
+    private Double discount;
 
     @JsonIgnore
     @ManyToOne(fetch = FetchType.EAGER, optional = false)
