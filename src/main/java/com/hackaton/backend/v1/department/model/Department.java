@@ -2,6 +2,7 @@ package com.hackaton.backend.v1.department.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.hackaton.backend.v1.company.model.Company;
+import com.hackaton.backend.v1.product.model.Product;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -10,6 +11,7 @@ import lombok.Setter;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.util.Set;
 
 @Table
 @Getter
@@ -34,6 +36,9 @@ public class Department implements Serializable {
     @ManyToOne(fetch = FetchType.EAGER, optional = false)
     @JoinColumn(name = "FK_COMPANY_UID")
     private Company company;
+
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, mappedBy = "department")
+    private Set<Product> products;
 
     @Column(name = "CREATED_AT", nullable = false)
     private LocalDateTime createdAt;
