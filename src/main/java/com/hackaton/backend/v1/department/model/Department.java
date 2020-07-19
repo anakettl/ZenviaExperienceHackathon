@@ -1,5 +1,6 @@
 package com.hackaton.backend.v1.department.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.hackaton.backend.v1.company.model.Company;
 import com.hackaton.backend.v1.product.model.Product;
@@ -33,6 +34,7 @@ public class Department implements Serializable {
     @Column(name = "NAME", nullable = false, length = 200)
     private String name;
 
+    @JsonIgnore
     @ManyToOne(fetch = FetchType.EAGER, optional = false)
     @JoinColumn(name = "FK_COMPANY_UID")
     private Company company;
