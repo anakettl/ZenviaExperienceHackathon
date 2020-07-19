@@ -19,7 +19,7 @@ public class Product implements Serializable {
     @Column(name = "NAME", nullable = false, length = 200)
     private String name;
 
-    @Column(code = "CODE", nullable = false, length = 10)
+    @Column(name = "CODE", nullable = false, length = 10)
     private String code;
 
     @Column(description = "description", nullable = false, length = 400)
@@ -40,4 +40,3 @@ public class Product implements Serializable {
     }
 
 }
-
