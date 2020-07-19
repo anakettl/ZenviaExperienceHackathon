@@ -19,7 +19,6 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 @SequenceGenerator(name = "SEQ_DEPARTMENT", sequenceName = "SEQUENCE_DEPARTMENT", allocationSize = 1)
-
 public class Department implements Serializable {
 
     public Department(Long id) { this.id = id; }
@@ -31,6 +30,10 @@ public class Department implements Serializable {
 
     @Column(name = "NAME", nullable = false, length = 200)
     private String name;
+
+    @ManyToOne(fetch = FetchType.EAGER, optional = false)
+    @JoinColumn(name = "FK_COMPANY_UID")
+    private Company company;
 
     @Column(name = "CREATED_AT", nullable = false)
     protected LocalDateTime createdAt;
