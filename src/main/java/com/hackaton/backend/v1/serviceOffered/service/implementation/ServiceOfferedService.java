@@ -3,6 +3,7 @@ package com.hackaton.backend.v1.serviceOffered.service.implementation;
 import com.hackaton.backend.v1.core.model.ResourceCreated;
 import com.hackaton.backend.v1.serviceOffered.dto.ServiceOfferedDto;
 import com.hackaton.backend.v1.serviceOffered.model.ServiceOffered;
+import com.hackaton.backend.v1.serviceOffered.repository.ServiceOfferedRepository;
 import com.hackaton.backend.v1.serviceOffered.service.interfaces.IServiceOfferedService;
 import lombok.AllArgsConstructor;
 import org.springframework.data.domain.Sort;

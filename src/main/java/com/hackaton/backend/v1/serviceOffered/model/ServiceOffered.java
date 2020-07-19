@@ -31,8 +31,8 @@ public class ServiceOffered implements Serializable {
     @Column(name = "NAME", nullable = false, length = 200)
     private String name;
 
-    @Column(codigo = "CODIGO", nullable = false, length = 10)
-    private String codigo;
+    @Column(code = "CODE", nullable = false, length = 10)
+    private String code;
 
     @ManyToOne(fetch = FetchType.EAGER, optional = false)
     @JoinColumn(name = "FK_COMPANY_UID")
