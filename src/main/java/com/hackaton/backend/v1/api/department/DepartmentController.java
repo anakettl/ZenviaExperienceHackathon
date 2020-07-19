@@ -16,7 +16,7 @@ import java.util.List;
 
 @RestController
 @AllArgsConstructor
-@RequestMapping("/api/v1/departments")
+@RequestMapping("/api/v1/companies/{id}/departments")
 public class DepartmentController implements Serializable {
 
     private final IDepartmentService departmentService;
