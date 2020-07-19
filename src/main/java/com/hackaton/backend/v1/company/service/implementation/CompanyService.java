@@ -23,7 +23,7 @@ public class CompanyService implements ICompanyService {
 
     @Override
     public ResourceCreated save(CompanyDto companyDto) {
-        return new ResourceCreated(companyRepository.save(companyDto.convertToAssociated()).getId());
+        return new ResourceCreated(companyRepository.save(companyDto.convertToCompany()).getId());
     }
 
     @Override

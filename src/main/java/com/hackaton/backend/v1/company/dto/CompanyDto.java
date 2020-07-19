@@ -16,13 +16,13 @@ import java.time.LocalDateTime;
 public class CompanyDto implements Serializable {
 
     private String name;
-    private String cpf;
+    private String cnpj;
 
-    public CompanyDto(String validCpf) {
-        this.cpf = validCpf;
+    public CompanyDto(String validCnpj) {
+        this.cnpj = validCnpj;
     }
 
-    public Company convertToAssociated() {
-        return new Company(null, this.name, this.cpf, LocalDateTime.now());
+    public Company convertToCompany() {
+        return new Company(null, this.name, this.cnpj, LocalDateTime.now());
     }
 }

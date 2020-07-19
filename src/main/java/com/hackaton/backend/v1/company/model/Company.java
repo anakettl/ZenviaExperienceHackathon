@@ -42,4 +42,8 @@ public class Company implements Serializable {
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "company", fetch = FetchType.EAGER)
     private Set<Department> departments;
+
+    public Long getId() {
+        return id;
+    }
 }
