@@ -21,6 +21,10 @@ public class DepartmentService implements IDepartmentService {
 
     private final DepartmentRepository departmentRepository;
 
+    public DepartmentService(DepartmentRepository departmentRepository) {
+        this.departmentRepository = departmentRepository;
+    }
+
     @Override
     public ResourceCreated save(DepartmentDto departmentDto) {
         return new ResourceCreated(departmentRepository.save(departmentDto.convertToDepartment()).getId());

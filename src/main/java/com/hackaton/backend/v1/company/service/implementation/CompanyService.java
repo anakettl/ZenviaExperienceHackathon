@@ -21,6 +21,10 @@ public class CompanyService implements ICompanyService {
 
     private final CompanyRepository companyRepository;
 
+    public CompanyService(CompanyRepository companyRepository) {
+        this.companyRepository = companyRepository;
+    }
+
     @Override
     public ResourceCreated save(CompanyDto companyDto) {
         return new ResourceCreated(companyRepository.save(companyDto.convertToCompany()).getId());

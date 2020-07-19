@@ -35,6 +35,9 @@ public class Department implements Serializable {
     @Column(name = "CREATED_AT", nullable = false)
     protected LocalDateTime createdAt;
 
+    public Department(Object o, String name, LocalDateTime now) {
+    }
+
     public Long getId() {
         return id;
     }

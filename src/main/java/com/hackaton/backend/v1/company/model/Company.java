@@ -10,6 +10,7 @@ import lombok.Setter;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.util.List;
 import java.util.Set;
 
 @Table
@@ -42,6 +43,9 @@ public class Company implements Serializable {
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "company", fetch = FetchType.EAGER)
     private Set<Department> departments;
+
+    public Company(Object o, String name, String cnpj, LocalDateTime now, List<Department> departments) {
+    }
 
     public Long getId() {
         return id;

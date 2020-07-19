@@ -13,4 +13,7 @@ import java.io.Serializable;
 @NoArgsConstructor
 public class ResourceCreated implements Serializable {
     private Long id;
+
+    public ResourceCreated(Long id) {
+    }
 }
