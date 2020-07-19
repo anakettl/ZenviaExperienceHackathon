@@ -2,9 +2,17 @@ package com.hackaton.backend.v1.promotion.dto;
 
 import com.hackaton.backend.v1.company.model.Company;
 import com.hackaton.backend.v1.promotion.model.Promotion;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.time.LocalDateTime;
 
+@Setter
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
 public class PromotionDto {
 
     private String name;
