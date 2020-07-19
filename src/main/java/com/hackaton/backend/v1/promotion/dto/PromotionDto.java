@@ -24,7 +24,7 @@ public class PromotionDto implements Serializable {
     private Company company;
 
     public Promotion convertToPromotion() {
-        return new PromotionDto(null, this.name, this.beginDate, this.endDate, this.description, this.discount, company, LocalDateTime.now());
+        return new Promotion(null, this.name, this.beginDate, this.endDate, this.description, this.discount, company, LocalDateTime.now());
     }
 }
 
