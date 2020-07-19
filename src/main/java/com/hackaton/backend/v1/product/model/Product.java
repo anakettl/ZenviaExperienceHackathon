@@ -1,5 +1,6 @@
 package com.hackaton.backend.v1.product.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.hackaton.backend.v1.department.model.Department;
 import lombok.AllArgsConstructor;
@@ -40,6 +41,7 @@ public class Product implements Serializable {
     @Column(name = "PRICE", nullable = false, columnDefinition = "NUMERIC(19,0)")
     private Double price;
 
+    @JsonIgnore
     @ManyToOne(fetch = FetchType.EAGER, optional = false)
     @JoinColumn(name = "FK_DEPARTMENT_UID")
     private Department department;
