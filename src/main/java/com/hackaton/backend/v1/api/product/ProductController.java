@@ -19,7 +19,7 @@ import java.util.List;
 
 @RestController
 @AllArgsConstructor
-@RequestMapping("/api/v1/products")
+@RequestMapping("/api/v1/companies/{id}/departments/{id}/products")
 public class ProductController implements Serializable {
 
     private final IProductService productService;
