@@ -35,7 +35,7 @@ management:
       base-path: "/api"
       cors:
         allowed-origins: http://localhost:3000
-        allowed-methods: *
+        allowed-methods: DELETE, GET, POST, PUT, PATCH, OPTIONS
 
 feign:
   client:
