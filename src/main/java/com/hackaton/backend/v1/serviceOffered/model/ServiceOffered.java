@@ -1,5 +1,6 @@
 package com.hackaton.backend.v1.serviceOffered.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.hackaton.backend.v1.company.model.Company;
 import lombok.AllArgsConstructor;
@@ -34,6 +35,7 @@ public class ServiceOffered implements Serializable {
     @Column(name = "CODE", nullable = false, length = 10)
     private String code;
 
+    @JsonIgnore
     @ManyToOne(fetch = FetchType.EAGER, optional = false)
     @JoinColumn(name = "FK_COMPANY_UID")
     private Company company;
