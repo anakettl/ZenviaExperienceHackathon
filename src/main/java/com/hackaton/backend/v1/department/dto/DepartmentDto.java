@@ -17,7 +17,7 @@ public class DepartmentDto implements Serializable {
 
     private String name;
 
-    public Department convertToAssociated() {
+    public Department convertToDepartment() {
         return new Department(null, this.name, LocalDateTime.now());
     }
 }

@@ -1,7 +1,7 @@
 package com.hackaton.backend.v1.department.service.implementation;
 
-import com.hackaton.backend.v1.department.dto.DepartmentDto;
 import com.hackaton.backend.v1.core.model.ResourceCreated;
+import com.hackaton.backend.v1.department.dto.DepartmentDto;
 import com.hackaton.backend.v1.department.model.Department;
 import com.hackaton.backend.v1.department.repository.DepartmentRepository;
 import com.hackaton.backend.v1.department.service.interfaces.IDepartmentService;
@@ -23,7 +23,7 @@ public class DepartmentService implements IDepartmentService {
 
     @Override
     public ResourceCreated save(DepartmentDto departmentDto) {
-        return new ResourceCreated(departmentRepository.save(departmentDto.convertToAssociated()).getId());
+        return new ResourceCreated(departmentRepository.save(departmentDto.convertToDepartment()).getId());
     }
 
     @Override
