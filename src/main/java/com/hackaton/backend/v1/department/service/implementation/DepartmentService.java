@@ -16,7 +16,6 @@ import static com.hackaton.backend.v1.core.validation.GenericMessagesValidationE
 import static com.hackaton.backend.v1.core.validation.MessageValidationProperties.getMessage;
 
 @Service
-@AllArgsConstructor
 public class DepartmentService implements IDepartmentService {
 
     private final DepartmentRepository departmentRepository;
