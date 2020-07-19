@@ -20,7 +20,7 @@ public class PromotionDto implements Serializable {
     private LocalDateTime beginDate;
     private LocalDateTime endDate;
     private String description;
-    private Integer discount;
+    private Double discount;
     private Company company;
 
     public Promotion convertToPromotion() {
