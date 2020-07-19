@@ -16,14 +16,17 @@ import static com.hackaton.backend.v1.core.validation.GenericMessagesValidationE
 import static com.hackaton.backend.v1.core.validation.MessageValidationProperties.getMessage;
 
 @Service
-@AllArgsConstructor
 public class CompanyService implements ICompanyService {
 
     private final CompanyRepository companyRepository;
 
+    public CompanyService(CompanyRepository companyRepository) {
+        this.companyRepository = companyRepository;
+    }
+
     @Override
     public ResourceCreated save(CompanyDto companyDto) {
-        return new ResourceCreated(companyRepository.save(companyDto.convertToAssociated()).getId());
+        return new ResourceCreated(companyRepository.save(companyDto.convertToCompany()).getId());
     }
 
     @Override
