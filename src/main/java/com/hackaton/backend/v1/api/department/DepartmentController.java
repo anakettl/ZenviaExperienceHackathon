@@ -21,6 +21,10 @@ public class DepartmentController implements Serializable {
 
     private final IDepartmentService departmentService;
 
+    public DepartmentController(IDepartmentService departmentService) {
+        this.departmentService = departmentService;
+    }
+
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<Department>> getAll(@RequestParam(required = false, defaultValue = "ASC") String sort) {
         List<Department> list = departmentService.findAll(Sort.by(Sort.Direction.fromString(sort), "name"));

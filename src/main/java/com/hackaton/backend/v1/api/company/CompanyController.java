@@ -21,6 +21,10 @@ public class CompanyController implements Serializable {
 
     private final ICompanyService companyService;
 
+    public CompanyController(ICompanyService companyService) {
+        this.companyService = companyService;
+    }
+
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<Company>> getAll(@RequestParam(required = false, defaultValue = "ASC") String sort) {
         List<Company> list = companyService.findAll(Sort.by(Sort.Direction.fromString(sort), "name"));
