@@ -32,7 +32,10 @@ public class Delivery implements Serializable {
     private Long id;
 
     @Column(name = "REGION", nullable = false, length = 200)
-    private String name;
+    private String region;
+
+    @Column(name = "PRICE", nullable = false, columnDefinition = "NUMERIC(19,0)")
+    private Double price;
 
     @JsonIgnore
     @ManyToOne(fetch = FetchType.EAGER, optional = false)
