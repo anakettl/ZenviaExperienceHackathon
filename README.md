@@ -79,4 +79,5 @@ cd ./ZenviaExperienceHackathon
 ./gradlew bootRun
 ```
 
-
+## Rotas da API
+https://zenvia-exp-hackathon-backend.herokuapp.com/swagger-ui.html#/
