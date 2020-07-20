@@ -1,9 +1,27 @@
 ![Java CI with Gradle](https://github.com/anakettl/ZenviaExperienceHackathon/workflows/Java%20CI%20with%20Gradle/badge.svg)
-# ZenviaExperienceHackathon
+## ZenviaExperienceHackathon
 
 ----
 
-Projeto desenvolvido para o ZenviaExperienceHackathon
+# O QUE É O ZENVIA EXPERIENCE HACKATHON?
+
+É uma maratona de programação para estimular e incentivar a criatividade, inovação e tecnologia na busca por soluções nas plataformas de comunicação.
+
+# O DESAFIO
+
+Houston we have a problem!
+
+No cenário atual, onde dinâmicas de mercado mudam mais rápido que o brilhar de um cometa e com a força de uma colisão entre planetas, diversas empresas se viram obrigadas a entrar em seus foguetes e passar pelo cinturão de asteroides da transformação digital.
+
+Alguns foguetes menores tiveram problemas em seus motores e enquanto resolviam esses desafios técnicos, se perderam no espaço sem conseguir contato com os outros e sem saber qual a rota mais segura para seguir.
+
+Estes foguetes são os principais fornecedores de trajes espaciais, alimentação e entretenimento, e sua existência é essencial para o futuro da humanidade. O fato de estarem perdidos, causou um racionamento de suprimentos, deixando a população insatisfeita. Por outro lado, por serem pequenos e estarem sem faturamento, o dinheiro para pagar manutenção já se esgotou.
+
+Como forma de auxiliar estas tripulações a achar a rota mais segura, convidamos você para formar uma equipe e usar as APIs da Zenvia como ferramenta para hackear as centrais de comunicação destes foguetes, e ajudar eles a atravessarem este momento de dificuldade.
+
+E para encarar esse desafio, você não estará sozinhe! Além de amigues e colegues de hackathon, convidamos uma equipe de astronautas experts em problemas de comunicação. Essa equipe irá ajudar seu time colocar suas ideias em prática e construir um projeto vencedor! Vocês terão 48 horas para criar e apresentar um protótipo inovador que além de resolver o desafio, conquiste os nosso time de jurados.
+
+# A SOLUÇÃO
 
 ----
 
