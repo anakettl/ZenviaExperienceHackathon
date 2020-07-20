@@ -23,7 +23,7 @@ E para encarar esse desafio, você não estará sozinhe! Além de amigues e cole
 
 # TIME 41: A SOLUÇÃO
 
-Desenvolvemos uma plataforma que é um berçario para pequenos estabelecimentos que precisam vender seus produtos on-line através da integração da loja com o WhatsApp.
+A ZenviaShop é um sistema que tem como objetivo facilitar o encontro de quem quer oferecer os seus produtos ou serviços e necessita iniciar suas vendas na Internet com os clientes que desejam realizar compras. O nosso sistema de criação de lojas virtuais e vendas pelas redes sociais, tem como foco a facilitação da conversação entre as lojas cadastradas em nosso sistema com os seus clientes e mercado consumidor. Usando a plataforma de comunicação Zenvia, revolucionamos a forma como vendemos na internet, com a comunicação das empresas via SMS, voz, WhatsApp, e-mail ou aplicativos de mensagens. Gerando mais engajamento, maior alcance de público e maiores resultados. Trazendo em nosso DNA a expertise Zenvia como facilitadora na forma como as empresas se comunicam com os seus clientes.
 
 ----
 
