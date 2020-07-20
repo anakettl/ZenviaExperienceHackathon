@@ -21,7 +21,9 @@ Como forma de auxiliar estas tripulações a achar a rota mais segura, convidamo
 
 E para encarar esse desafio, você não estará sozinhe! Além de amigues e colegues de hackathon, convidamos uma equipe de astronautas experts em problemas de comunicação. Essa equipe irá ajudar seu time colocar suas ideias em prática e construir um projeto vencedor! Vocês terão 48 horas para criar e apresentar um protótipo inovador que além de resolver o desafio, conquiste os nosso time de jurados.
 
-# A SOLUÇÃO
+# TIME 41: A SOLUÇÃO
+
+Desenvolvemos uma plataforma que é um berçario para pequenos estabelecimentos que precisam vender seus produtos on-line através da integração da loja com o WhatsApp.
 
 ----
 
