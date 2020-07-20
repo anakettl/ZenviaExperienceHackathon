@@ -40,7 +40,7 @@ public class Promotion implements Serializable {
     @Column(name = "DESCRIPTION", nullable = false, length = 400)
     private String description;
 
-    @Column(name = "DISCOUNT", nullable = false, columnDefinition = "NUMBER(10,2)")
+    @Column(name = "DISCOUNT", nullable = false, columnDefinition = "NUMERIC(10,2)")
     private Double discount;
 
     @JsonIgnore
