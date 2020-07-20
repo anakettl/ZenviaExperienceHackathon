@@ -7,6 +7,7 @@ import lombok.Getter;
 @AllArgsConstructor
 public enum GenericMessagesValidationEnum {
     REQUIRED_FIELD("javax.validation.constraints.NotNull.message"),
+    USER_NOT_FOUND("userNotFound.message"),
     MAXIMUM_SIZE("javax.validation.constraints.Size.message"),
     EQUAL_SIZE("javax.validation.constraints.Size.equal.message"),
     INVALID_EMAIL("invalidEmail.message"),
