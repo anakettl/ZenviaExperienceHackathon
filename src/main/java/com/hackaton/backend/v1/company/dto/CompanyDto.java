@@ -1,6 +1,7 @@
 package com.hackaton.backend.v1.company.dto;
 
 import com.hackaton.backend.v1.company.model.Company;
+import com.hackaton.backend.v1.delivery.model.Delivery;
 import com.hackaton.backend.v1.department.model.Department;
 import com.hackaton.backend.v1.serviceOffered.model.ServiceOffered;
 import lombok.AllArgsConstructor;
@@ -22,12 +23,13 @@ public class CompanyDto implements Serializable {
     private String cnpj;
     private Set<Department> departments;
     private Set<ServiceOffered> servicesOffered;
+    private Set<Delivery> deliveries;
 
     public CompanyDto(String validCnpj) {
         this.cnpj = validCnpj;
     }
 
     public Company convertToCompany() {
-        return new Company(null, this.name, this.cnpj, departments, servicesOffered, LocalDateTime.now());
+        return new Company(null, this.name, this.cnpj, departments, servicesOffered, deliveries, LocalDateTime.now());
     }
 }
